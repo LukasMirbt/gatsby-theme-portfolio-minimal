@@ -16,14 +16,15 @@ export function Header(): React.ReactElement {
         <>
             {siteConfiguration.navigation.header.map((linkObject, key) => {
                 return (
-                    <Link
+                    <div></div>
+/*                     <Link
                         key={key}
                         to={linkObject.url}
                         className={classes.NavLink}
                         onClick={!isDesktopBreakpoint ? () => setOpen(!open) : undefined}
                     >
                         {linkObject.label}
-                    </Link>
+                    </Link> */
                 );
             })}
             <a
