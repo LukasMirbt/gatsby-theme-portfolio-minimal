@@ -16,7 +16,6 @@ export function Header(): React.ReactElement {
         <>
             {siteConfiguration.navigation.header.map((linkObject, key) => {
                 return (
-                    <div></div>
 /*                     <Link
                         key={key}
                         to={linkObject.url}
@@ -27,7 +26,7 @@ export function Header(): React.ReactElement {
                     </Link> */
                 );
             })}
-            <a
+{/*             <a
                 href={siteConfiguration.navigation.ctaButton.url}
                 target={siteConfiguration.navigation.ctaButton.openNewTab ? '_blank' : undefined}
                 rel="noopener noreferrer"
@@ -35,7 +34,7 @@ export function Header(): React.ReactElement {
                 onClick={!isDesktopBreakpoint ? () => setOpen(!open) : undefined}
             >
                 {siteConfiguration.navigation.ctaButton.label}
-            </a>
+            </a> */}
         </>
     );
 
